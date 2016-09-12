@@ -7,6 +7,7 @@ php Slim, Slim-Session, NotORM, jQuery, Bootstrap, phpLib and a few additionals 
 Two things need doing still: data validation and URL redirecting
 
 Caveats: Obviously, user passwords should at the bare minimum be md5'd and salted however, I have for now left out the salt since there is currently no mechanism for user registration
+
 1. Install database
 
 mysql -u root -p

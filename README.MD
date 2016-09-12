@@ -26,7 +26,7 @@ insert into users (`client_id`, `user_name`, `password_hash`, `last_login`) valu
 quit;
 
 
-2. chmod u+x ./build tests/test
+2. chmod u+x ./build
 3. ./build and leave running...
 4. Test at http://localhost/ajax-php/
 5. username: jadissa password: asdf123

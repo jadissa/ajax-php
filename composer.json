@@ -11,7 +11,7 @@
     "bryanjhv/slim-session": "~3.0",
     "vrana/notorm": "dev-master",
     "twitter/bootstrap": "dev-master",
-    "nikken1/phplib": "dev-wild",
+    "jadissa/phplib": "dev-wild",
     "components/jquery": "1.9.*"
   }
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <database>
+        <mysql>
+            <host>localhost</host>
+            <username>ajaxphp</username>
+            <password>testing</password>
+            <database>ajaxphp</database>
+        </mysql>
+    </database>
+</settings>

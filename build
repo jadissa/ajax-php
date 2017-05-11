@@ -1,9 +1,11 @@
 #!/bin/bash
 echo "Installing Composer..."
 curl -sS https://getcomposer.org/installer | php -- --install-dir=.
-echo "Updating Composer"
+echo "Updating Composer..."
 php composer.phar selfupdate
-echo "Running Composer"
+echo "Running Composer..."
 php composer.phar update
 php composer.phar dumpautoload -o
 php composer.phar install
+echo "Running Curl test..."
+php tests/curl.php

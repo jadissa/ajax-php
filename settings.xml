@@ -2,7 +2,7 @@
 <settings>
     <database>
         <mysql>
-            <host>localhost</host>
+            <host>127.0.0.1</host>
             <username>ajaxphp</username>
             <password>testing</password>
             <database>ajaxphp</database>

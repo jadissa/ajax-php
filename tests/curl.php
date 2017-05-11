@@ -1,7 +1,7 @@
 <?php
 //extract data from the post
 //set POST variables
-$url = 'http://localhost:8080/service.php/login';
+$url = 'http://localhost/ajax-php/service.php/login';
 $fields = array(
     'username' => urlencode('jadissa'),
     'password' => urlencode('asdf123')

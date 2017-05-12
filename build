@@ -1,19 +1,11 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-echo "Checking for Composer"
-COMPOSER_CMD=$(which composer)
-if [[ "" == "$COMPOSER_CMD" ]]
-then
-    echo "Installing Composer"
-    curl -sS https://getcomposer.org/installer | php -- --install-dir=bin
-    COMPOSER_CMD=$(which composer)
-else
-    echo "Updating Composer"
-    $COMPOSER_CMD selfupdate
-fi
-echo "Running Composer"
-cd $DIR
-$COMPOSER_CMD update
-$COMPOSER_CMD dumpautoload -o
-php $COMPOSER_CMD install
-php -S localhost:8080
+echo "Installing Composer..."
+curl -sS https://getcomposer.org/installer | php -- --install-dir=.
+echo "Updating Composer..."
+php composer.phar selfupdate
+echo "Running Composer..."
+php composer.phar update
+php composer.phar dumpautoload -o
+php composer.phar install
+echo "Running Curl test..."
+php tests/curl.php

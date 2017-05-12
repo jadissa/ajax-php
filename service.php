@@ -1,7 +1,7 @@
 <?php
 // Headers/Session
-header('Content-type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
+header('Content-type: application/json; charset=utf-8');
 
 // Requirements
 use \Psr\Http\Message\ServerRequestInterface as Request;

@@ -5,7 +5,7 @@ $(document).ready(function()
     {
         var result = null;
         $.ajax({
-            url:'//localhost/ajax-php/service.php/login',
+            url:'/ajax-php/service.php/login',
             dataType:'json',
             timeout:500,
             async:false,
